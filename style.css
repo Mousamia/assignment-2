@@ -1,7 +1,7 @@
 /* Utilties */
 /* color */
 :root{
-    --orange-color: rgb(255, 144, 14);
+    --orange-color: #FF900E;
     --sheddy-background:rgba(255,144,14,0.1);
     --dark-color: #131313;
     --background-color: #FFF4E7;
@@ -12,6 +12,18 @@
 body{
     font-family: 'Work Sans', sans-serif;
     border: 3px solid hotpink;
+}
+
+/* universal button */
+.btn{
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 8px;
+    color: var(--white-color);
+    padding: 25px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 32px 0;
 }
 
 /* header section starts here */
@@ -66,7 +78,7 @@ nav{
     margin-top: 50px;
 }
 
-.header-text .header-subtitle{
+.header-subtitle{
     color: #727272;
 }
 
@@ -85,11 +97,68 @@ nav{
 
     width: 80%;
     margin: 40px auto;
-   
 }
+
+/* Quick List Section */
+
+.quick-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 85px 100px;
+    border: 2px solid blue;
+}
+
+/* quick-list-image section here*/
+.quick-list-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.quick-list-image img{
+    width: 330px;
+    height: 330px;
+    border-radius: 8px;
+    border: 3px solid red;
+}
+
+.quick-list-text{
+    max-width: 400px;
+}
+
+.second-btn{
+    padding:16px 20px;
+}
+
+.quick-list-title{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.quick-list .grey{
+    color: var(--grey-color);
+}
+
+.quick-list .orange{
+    color:var(--orange-color);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive code for  small devices */
 
+/* Header Section */
 @media screen and (max-width: 688px) {
     nav{
         flex-direction: column;
@@ -123,5 +192,42 @@ nav{
         font-size: 18px;
         margin: 28px;
     }
+
+
+    /* Quick List Section */
+
+    .quick-list{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid blue;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .quick-list-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+        text-align: center;
+    }
+
+    .quick-list-image img{
+        width:70%;
+        height: 280px;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 2px solid red;
+    }
+    
+    
+
+    .quick-list-text{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+
     
 }
+
