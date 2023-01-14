@@ -11,7 +11,7 @@
 /* font */
 body{
     font-family: 'Work Sans', sans-serif;
-    margin: 0;
+    border: 3px solid hotpink;
 }
 
 /* header section starts here */
@@ -25,6 +25,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 2px solid yellow;
 }
 
 .nav-logo .logo{
@@ -50,16 +51,19 @@ nav{
 /* header main starts here */
 .header-main{
     text-align: center;
+    border: 2px solid cadetblue;
 }
 
 .header-text{
     width:50%;
     margin: 0 auto;
+    
 }
 
 .header-text .header-title{
     font-size: 64px;
     font-weight: 700;
+    margin-top: 50px;
 }
 
 .header-text .header-subtitle{
@@ -70,8 +74,8 @@ nav{
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
     border-radius: 8px;
-    padding: 25px 20px;
     color: var(--white-color);
+    padding: 25px 20px;
     font-weight: 600;
     font-size: 20px;
     margin: 32px;
@@ -82,4 +86,42 @@ nav{
     width: 80%;
     margin: 40px auto;
    
+}
+
+/* Responsive code for  small devices */
+
+@media screen and (max-width: 688px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-menu ul{
+        display: block;
+    }
+
+    .nav-menu ul li{
+        padding: 10px 0;
+    }
+
+    .header-main .header-text{
+        width: 100%;
+    }
+
+    .header-text .header-title{
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+    
+    .header-text .header-subtitle{
+        color: #727272;
+        padding: 0 5px;
+    }
+
+    .header-text .btn{
+        padding: 18px  23px;
+        font-size: 18px;
+        margin: 28px;
+    }
+    
 }
