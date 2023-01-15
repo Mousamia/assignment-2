@@ -292,6 +292,17 @@ nav{
     filter: grayscale(100%);
 }
 
+/* footer section here */
+
+footer div{
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+
 
 
 
@@ -469,8 +480,15 @@ nav{
         filter: grayscale(100%);
         margin: 30px auto;
     }
-    
 
+    /* footer section */
+
+    footer div{
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        
+    }
 
 
     
