@@ -270,6 +270,29 @@ nav{
 
 
 
+.sponsors{
+    margin: 100px 0;
+    border: 2px solid red;
+}
+.sponsors-text{
+    text-align: center;
+    max-width: 40%;
+    margin: 20px auto;
+}
+
+.sponsors-icon{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px  100px;
+
+}
+
+.sponsors-icon img{
+    width: 100px;
+    filter: grayscale(100%);
+}
+
+
 
 
 
@@ -399,6 +422,8 @@ nav{
         position: static;
     }
 
+    /* some facts section */
+
     .text{
         margin-left: 160px;
         width: 100%;
@@ -423,6 +448,28 @@ nav{
         transform: scale(1.1);
     }
 
+
+    /* Our sponsors section */
+
+    .sponsors-text{
+        width: 100%;
+        background-color: rgb(245, 237, 237);
+        padding: 30px;
+    }
+    .sponsors-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    
+    }
+    
+    .sponsors-icon img{
+        width: 100px;
+        filter: grayscale(100%);
+        margin: 30px auto;
+    }
+    
 
 
 
